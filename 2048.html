@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<link href='http://fonts.useso.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		p{
+			background-color: rgba(252,219,69,0.5);
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 2vw;
+			font-size: 4.5vw;
+			font-weight: bold;
+			color:red;
+		}
+		canvas{width: 100vw;}
+	</style>
+	<script src="./jquery.js"></script>
+	<script src="./jquery.touchSwipe.min.js"></script>
+	<script src="./2048.js"></script>
+	<script src="./tools.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var C2048 = G2048.new();
+			C2048.start();
+		});
+	</script>
+	<p>致微信用户：右滑有风险，一定要谨慎。</p>
+	<canvas id="2048" width="1080" height="1920"></canvas>
+</body>
+</html>
